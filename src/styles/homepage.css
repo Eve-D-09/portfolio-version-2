@@ -2,8 +2,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../img/images/portfolio-background2.jpg);
-  background-position: right;
+  background-image: url(../img/images/background1.jpg);
+ /* background-position: right; */
+  background-repeat: no-repeat;
+  background-size:cover;
   margin: 0;
   width: 100%;
   height: max-content;
@@ -52,8 +54,8 @@
 }
 
 .homeParagraph span {
-  font-family: "Anthem-handwritten", sans-serif;
-  font-size: 1.1rem;
+  font-family: "Kinston-handwritten", sans-serif;
+  font-size: 1.3rem;
 }
 
 .homeParagraph:nth-of-type(4) {
@@ -83,6 +85,7 @@
   font-size: 1.6rem;
   margin: 0;
   padding: 15px 10px;
+  word-break: break-word;
 }
 
 .skillsListing {
@@ -142,7 +145,7 @@
 /* -----------------tablets----------------------------- */
 @media (min-width: 400px) {
   .profession p {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .firstHomeBox {
     height: 58vh;

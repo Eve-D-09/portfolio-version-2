@@ -9,6 +9,9 @@ export const prod = {
         WELCOME: "Welcome, my name is IEVA",
         CALL_ME: "But You can call me Eve or Eva",
         I_AM: "Front-end Developer",
+        PHRASE_LINE1: "I believe in",
+        PHRASE_SPAN: "dreaming & doing",
+        PHRASE_LINE2: "and watching what happens",
         DOWNLOAD_CV: "Download my CV",
         BUTTON_PROJECTS: "My Projects",
         ABOUT_H2: "About Me",
@@ -44,7 +47,10 @@ export const prod = {
         CONTACT: "Mes coordonnées",
         WELCOME: "Bienvenue, je m'apelle IEVA",
         CALL_ME: "Mais Vous pouvez m'apeller Eva",
-        I_AM: "Développeuse Intégrateur Web ",
+        PHRASE_LINE1: "Je crois",
+        PHRASE_SPAN: "au rêve & l'action",
+        PHRASE_LINE2: "et à l'observation de ce qui se passe",
+        I_AM: "Front-end Developer",
         DOWNLOAD_CV: "Télécharger mon CV",
         BUTTON_PROJECTS: "Mes Projets",
         ABOUT_H2: "À propos de moi",
@@ -74,4 +80,6 @@ export const prod = {
         FOOTER_P: "Créé avec l'amour",
     },
 }
+
+//  I_AM: "Développeuse Intégrateur Web ",
 

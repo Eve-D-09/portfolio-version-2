@@ -79,3 +79,10 @@ picture {
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Kinston-handwritten";
+  src: url(./fonts/kinston/Kinston-Free-BF65317f457647c.otf);
+  font-style: normal;
+  font-display: swap;
+}
