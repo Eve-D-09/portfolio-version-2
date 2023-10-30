@@ -5,6 +5,7 @@ import { prod } from "../languages/lang.js";
 import { motion, useInView } from "framer-motion";
 import ProfilePhoto from "../img/images/profile-photo3.jpg";
 
+
 const About = (props) => {
   const navigate = useNavigate();
   const ref = useRef(null);
