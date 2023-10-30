@@ -1,0 +1,241 @@
+.headerContainer {
+  position: fixed;
+  z-index: 20;
+  /*  bring back 100vw? and position relative */
+  width: 100%;
+  background-color: black;
+  height: auto;
+  box-shadow: 0px 5px 4px 0px rgba(36, 34, 33, 0.726);
+  padding: 10px;
+}
+
+.headerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondBox {
+  display: flex;
+  align-items: center;
+}
+
+.headerContainer h1 {
+  color: white;
+  height: auto;
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: "Belogo", sans-serif;
+}
+
+.selectContainer {
+  height: auto;
+}
+
+.selectContainer select {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  color: var(--orange-red);
+  cursor: grab;
+}
+
+/*  no way to overcome option tag?  */
+option {
+  background-color: black;
+}
+
+.navigation {
+  margin: 0 auto;
+  display: flex;
+}
+
+.navigation button {
+  background: transparent;
+  border: none;
+  cursor: grab;
+}
+
+nav ul {
+  margin: 0 auto;
+
+  padding: 25px 0;
+  width: 90%;
+
+  border: 1px solid rgb(230, 82, 45);
+}
+
+.navigation li {
+  list-style-type: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.navLinks {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 0;
+  width: 100%;
+  cursor: grab;
+  text-align: center;
+}
+
+/*  was .navigation nav */
+nav {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* ---------------------------- */
+  transition: all 0.5s linear;
+  transform: translateX(0px);
+}
+
+.closeNavigation {
+  transform: translateX(350px);
+  transition: all 0.5s linear;
+}
+
+.homeLink {
+  color: var(--orange-red);
+}
+
+
+/*  it is button who closes nav, need to reduce ul padding-top if this button is visible*/
+.closeNav {
+  width: 90%;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+
+.closeNav > button {
+  width: 100%;
+  margin: 0 auto;
+  padding: 7px 0;
+  cursor: grab;
+}
+
+/* ----------------tablets--------------------- */
+@media (min-width: 600px) {
+  .headerWrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  nav {
+    height: 45vh;
+  }
+
+  nav ul {
+    height: 100%;
+  }
+
+  .navLinks {
+    font-size: 1.7rem;
+  }
+
+  .navigation li {
+    padding: 20px;
+  }
+}
+
+/*  at 700 still leave navigation on click */
+
+@media (min-width: 900px) {
+  .headerContainer {
+    height: auto;
+  }
+
+  .headerWrapper {
+    width: 95%;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+
+  .firstBox {
+    flex-basis: 30%;
+  }
+
+  .secondBox {
+    width: 100%;
+    flex-basis: 70%;
+  }
+
+  .selectContainer {
+    flex-basis: 10%;
+    order: 1;
+  }
+
+  .navigation {
+    flex-basis: 90%;
+    margin: 0;
+  }
+
+  nav {
+    position: unset;
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+  .navLinks {
+    padding: 0;
+    font-size: 1.3rem;
+    width: auto;
+  }
+
+  .navLinks:first-of-type {
+    border: 2px solid var(--orange-red);
+    order: -1;
+  }
+
+  .homeLink {
+    color: var(--orange-red);
+  }
+
+  .navigation li {
+    padding: 5px;
+  }
+
+  .navigation button {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .headerWrapper {
+    width: 95%;
+  }
+  nav ul {
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+    .headerWrapper {
+        width: 95%;
+      }
+}

@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Petrov", sans-serif;
+  font-size: 100%;
+  /*  this overflow rule causes problems */
+  /* overflow: hidden; */
+  padding: 0;
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+picture {
+  display: block;
+}
+
+:root {
+  --blue-color: #3584c9;
+  --orange-red: #e83b15;
+  --indigo-blue: #1f45fc;
+  --midnight-blue: #031133;
+  --border-radius: 5px;
+  --small-padding: 7px 10px;
+}
+
+@font-face {
+  font-family: "Pilcrow-regular";
+  src: url(./fonts/pilcrow/Pilcrow-Regular-BF64dd8808df29b.otf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pilcrow-semibold";
+  src: url(./fonts/pilcrow/Pilcrow-Semibold-BF64dd8808cf0c5.otf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pilcrow-medium";
+  src: url(./fonts/pilcrow/Pilcrow-Medium-BF64dd8808de63a.otf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Belogo";
+  src: url(./fonts/belogo/BELOGO.otf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Petrov";
+  src: url(./fonts/petrov/PetrovSans-Trial-Book-BF653889e42c9c3.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Petrov-italic";
+  src: url(./fonts/petrov/PetrovSans-Trial-SemiBoldItalic-BF653889e37bf23.otf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthem-handwritten";
+  src: url(./fonts/anthem/presentanthem-z86w1.ttf);
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,242 @@
+.homeContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/images/portfolio-background2.jpg);
+  background-position: right;
+  margin: 0;
+  width: 100%;
+  height: max-content;
+  padding-top: 45px;
+  margin-top: 25px;
+}
+
+.homeWrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  background-color: black;
+}
+
+.firstHomeBox {
+  width: 90%;
+  border: 1px solid var(--orange-red);
+  margin-bottom: 25px;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/*  maybe this will work when it will be some padding or margin */
+.homeParagraph {
+  margin: 0;
+  /* overflow: hidden; */
+  width: 100%;
+  height: auto;
+}
+
+.homeParagraph p {
+  margin: 0;
+  width: 100%;
+  font-size: 1rem;
+  opacity: unset;
+  color: white;
+  padding: 7px 10px;
+}
+
+.homeParagraph span {
+  font-family: "Anthem-handwritten", sans-serif;
+  font-size: 1.1rem;
+}
+
+.homeParagraph:nth-of-type(4) {
+  height: auto;
+  padding: 7px 10px;
+}
+
+.homeParagraph a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 7px 10px;
+  color: #ffffff;
+  font-weight: bolder;
+  border: 2px solid #fcfdff;
+  display: block;
+  width: 170px;
+  text-align: center;
+}
+
+.profession {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.profession p {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 15px 10px;
+}
+
+.skillsListing {
+  width: 100%;
+  padding-top: 5px;
+  background-color: var(--orange-red);
+}
+
+.skillsListing p {
+  margin: 0 auto;
+  width: 90%;
+  text-align: right;
+  font-size: 1rem;
+  padding: 7px 0;
+  overflow: hidden;
+  color: white;
+}
+.skillsListing div {
+  width: 90%;
+  padding: 7px 0;
+}
+.skillsListing div:nth-of-type(1) {
+  /* display: inline-block;
+  text-align: right;
+  margin: 0 auto; */
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.skillsListing div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.skillsListing button {
+  width: 170px;
+  background: none;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 7px 10px;
+  cursor: pointer;
+  color: white;
+  border: 2px solid;
+}
+
+
+.furtherLink button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+}
+
+/* -----------------tablets----------------------------- */
+@media (min-width: 400px) {
+  .profession p {
+    font-size: 2rem;
+  }
+  .firstHomeBox {
+    height: 58vh;
+  }
+}
+
+@media (min-width: 500px) {
+  .homeParagraph p,
+  .skillsListing p {
+    font-size: 1.3rem;
+  }
+  .profession p {
+    font-size: 2.5rem;
+  }
+
+  .homeParagraph span {
+    font-size: 1.5rem;
+  }
+
+  .skillsListing {
+    padding-top: 50px;
+  }
+
+  .homeParagraph,
+  .profession {
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .profession p {
+    padding: 10px 0;
+    font-size: 3.1rem;
+  }
+  .firstHomeBox,
+  .skillsListing {
+    padding: 10px;
+  }
+
+  .firstHomeBox {
+    height: 62vh;
+  }
+}
+
+@media (min-width: 800px) {
+  .profession p {
+    font-size: 4rem;
+  }
+  .homeWrapper {
+    width: 95%;
+  }
+}
+
+@media (min-width: 900px) {
+  .firstHomeBox {
+    width: 95%;
+  }
+
+  .profession p {
+    font-size: 5rem;
+    height: 55px;
+  }
+  .homeContainer {
+    padding-top: 30px;
+  }
+
+  .firstHomeBox {
+    height: 65vh;
+  }
+  .skillsListing div {
+    width: 95%;
+  }
+
+  .skillsListing p {
+    width: 95%;
+  }
+
+  .skillsListing button,
+  .homeParagraph a {
+    font-size: 1.2rem;
+    width: 200px;
+  }
+
+ 
+}
+
+@media (min-width: 1100px) {
+ .profession p {
+  font-size: 6rem;
+ }
+}
+
+
+
+
+
+
