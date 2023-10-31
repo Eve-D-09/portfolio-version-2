@@ -38,7 +38,7 @@ const HomePage = (props) => {
             <p>{prod[language].PHRASE_LINE1}<span> {prod[language].PHRASE_SPAN} </span> {prod[language].PHRASE_LINE2}</p>
           </div>
           <div className="homeParagraph">
-            <a href="/example.pdf" rel="noreferrer">
+            <a href="/Eve Dirmiene CV.pdf" rel="noreferrer">
               {prod[language].DOWNLOAD_CV}
             </a>
           </div>
